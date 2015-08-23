@@ -31,6 +31,7 @@ class Link extends ActiveRecord
             [['long_url'], 'required'],
             [['long_url'], 'url'],
             [['short_code'], 'safe'],
+            [['short_code'], 'unique'],
         ];
     }
 }
