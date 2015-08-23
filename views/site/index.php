@@ -9,7 +9,7 @@ $this->title = 'Home';
 ?>
 
 <section class="section--center mdl-grid">
-    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+    <div class="card-wide mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">Welcome</h2>
         </div>

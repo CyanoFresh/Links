@@ -12,7 +12,7 @@ section.section--center {
     width: 860px;
 }
 
-.demo-card-wide > .mdl-card__title {
+.card-wide > .mdl-card__title {
     color: #fff;
     height: 176px;
     background: url('../img/welcome_card.jpg') center / cover;

@@ -33,16 +33,4 @@ class Link extends ActiveRecord
             [['short_code'], 'safe'],
         ];
     }
-
-    /**
-     * @inheritdoc
-     */
-    public function attributeLabels()
-    {
-        return [
-            'id' => 'ID',
-            'short_code' => 'Short Code',
-            'long_url' => 'Long Url',
-        ];
-    }
 }

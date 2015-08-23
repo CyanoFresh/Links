@@ -44,6 +44,8 @@ $config = [
             'rules' => [
                 '' => 'site/index',
                 'short' => 'site/short',
+                'about' => 'site/about',
+                'api' => 'site/api',
                 '<shortCode:.+>' => 'site/go',
             ],
         ],
