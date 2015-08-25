@@ -1,7 +1,9 @@
 Links.solomaha.me
 ============================
 
-URL Shortener built on Yii2 Framework with Material Design Lite. It's my personal pet-project
+URL Shortener built on Yii2 Framework with Material Design Lite. It's my personal pet-project.
+
+Tests are outdated! Don't use it. Or write new for me :)
 
 DIRECTORY STRUCTURE
 -------------------

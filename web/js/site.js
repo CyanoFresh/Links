@@ -5,7 +5,9 @@
 
 var $form = $('#form');
 var $resultElement = $('textarea#result');
+var $resultSection = $('#result-section');
 var $copyButton = $('#copyButton');
+var $shareButton = $('#shareButton');
 
 $form.on('beforeSubmit', function () {
     // Ajax post request
@@ -14,7 +16,7 @@ $form.on('beforeSubmit', function () {
             // Save shortened URL to the HTML
             $resultElement.html(data.shortUrl);
             // Show result card
-            $('.hidden').removeClass('hidden');
+            $resultSection.removeClass('hidden');
             // Select result
             $resultElement.select();
         });
@@ -28,4 +30,9 @@ $copyButton.on('click', function () {
     $resultElement.select();
     // Copy selected
     document.execCommand('copy');
+});
+
+// Bind copy event
+$shareButton.on('click', function () {
+    // TODO
 });

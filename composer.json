@@ -1,21 +1,19 @@
 {
-    "name": "yiisoft/yii2-app-basic",
-    "description": "Yii 2 Basic Project Template",
-    "keywords": ["yii2", "framework", "basic", "project template"],
-    "homepage": "http://www.yiiframework.com/",
+    "name": "cyanofresh/links",
+    "description": "URL Shortener on Yii2 Framework and Material Design Lite",
+    "keywords": ["yii2", "framework", "links", "url", "shortener", "mdl", "material design"],
+    "homepage": "http://links.solomaha.me/",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "issues": "https://github.com/cyanofresh/links/issues?state=open",
+        "source": "https://github.com/cyanofresh/links"
     },
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": ">=2.0.4"
+        "yiisoft/yii2": ">=2.0.4",
+        "bower-asset/material-design-icons": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

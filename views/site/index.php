@@ -19,16 +19,16 @@ $this->title = 'Home';
             <?php $form = ActiveForm::begin([
                 'id' => 'form',
                 'action' => ['site/short'],
+                'validateOnType' => true,
+                // Custom Field class for Material Design Lite
+                'fieldClass' => 'app\\components\\ActiveField',
+                'errorCssClass' => 'is-invalid',
+                'attributes' => [
+                    'errorCssClass' => 'mdl-textfield__error',
+                ],
             ]) ?>
 
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <?= $form->field($model, 'long_url')->input('url', [
-                    'class' => 'mdl-textfield__input',
-                    'id' => 'longUrlInput',
-                ])->label(false) ?>
-                <label class="mdl-textfield__label" for="longUrlInput">Long URL</label>
-                <span class="mdl-textfield__error">It is not a link!</span>
-            </div>
+            <?= $form->field($model, 'long_url')->input('url') ?>
 
             <?= Html::submitButton('Short', [
                 'class' => 'mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect',
@@ -39,7 +39,7 @@ $this->title = 'Home';
     </div>
 </section>
 
-<section class="section--center mdl-grid hidden">
+<section class="section--center mdl-grid hidden" id="result-section">
     <div class="mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">Here is your shortened URL</h2>
@@ -48,10 +48,6 @@ $this->title = 'Home';
             <form>
                 <textarea id="result" onclick="select()" readonly></textarea>
                 <label class="visuallyhidden" for="result">Shortened Link</label>
-
-                <div class="mdl-tooltip" for="result">
-                    Press Ctrl + C to copy
-                </div>
             </form>
         </div>
         <div class="mdl-card__actions mdl-card--border">

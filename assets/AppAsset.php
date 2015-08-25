@@ -18,13 +18,13 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'https://fonts.googleapis.com/icon?family=Material+Icons',
+        'http://fonts.googleapis.com/icon?family=Material+Icons',
         'http://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
         'css/material.css',
         'css/site.css',
     ];
     public $js = [
-        'js/material.min.js',
+        'js/material.js',
         'js/site.js',
     ];
     public $depends = [

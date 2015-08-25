@@ -6160,7 +6160,6 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     transition-duration: .2s;
     -webkit-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-    display: inline-block;
     max-width: .1px
 }
 
