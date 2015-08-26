@@ -20,10 +20,12 @@ class AppAsset extends AssetBundle
     public $css = [
         'http://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
         'css/material.css',
+        'css/bootstrap-modal.css',
         'css/site.css',
     ];
     public $js = [
         'js/material.js',
+        'js/bootstrap-modal.js',
         'js/site.js',
     ];
     public $depends = [

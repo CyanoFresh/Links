@@ -34,4 +34,14 @@ class Link extends ActiveRecord
             [['short_code'], 'unique'],
         ];
     }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'long_url' => 'Long URL',
+        ];
+    }
 }

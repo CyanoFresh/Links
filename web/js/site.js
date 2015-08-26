@@ -2,14 +2,18 @@
  * Site.js - Main JS of the site
  * @author Alex Solomaha <cyanofresh@gmail.com>
  */
-
+$('#shareModal').modal('show');
 var $form = $('#form');
+var $formSpinner = $('#loadingSpinner');
 var $resultElement = $('textarea#result');
 var $resultSection = $('#result-section');
 var $copyButton = $('#copyButton');
 var $shareButton = $('#shareButton');
 
 $form.on('beforeSubmit', function () {
+    // Make loading spinner visible
+    $formSpinner.addClass('is-active');
+
     // Ajax post request
     $.post($form.attr('action'), $form.serialize(), 'json')
         .success(function (data) {
@@ -19,6 +23,8 @@ $form.on('beforeSubmit', function () {
             $resultSection.removeClass('hidden');
             // Select result
             $resultElement.select();
+            // Stop loading spinner
+            $formSpinner.removeClass('is-active');
         });
 
     return false;
@@ -32,7 +38,8 @@ $copyButton.on('click', function () {
     document.execCommand('copy');
 });
 
-// Bind copy event
+// Bind share event
 $shareButton.on('click', function () {
-    // TODO
+    // Show modal
+    $('#shareModal').modal('show');
 });

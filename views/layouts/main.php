@@ -24,7 +24,7 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 
-<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 <?php $this->beginBody() ?>
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -62,6 +62,10 @@ AppAsset::register($this);
         </div>
     </main>
 </div>
+
+<?php if (isset($this->blocks['modals'])): ?>
+    <?= $this->blocks['modals'] ?>
+<?php endif; ?>
 
 <?php $this->endBody() ?>
 </body>
