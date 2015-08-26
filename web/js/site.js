@@ -2,7 +2,6 @@
  * Site.js - Main JS of the site
  * @author Alex Solomaha <cyanofresh@gmail.com>
  */
-$('#shareModal').modal('show');
 var $form = $('#form');
 var $formSpinner = $('#loadingSpinner');
 var $resultElement = $('textarea#result');
