@@ -2,10 +2,14 @@
 
 /* @var $this yii\web\View */
 
+use app\components\ActiveForm;
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
 
 $this->title = 'Home';
+$this->registerMetaTag([
+    'name' => 'description',
+    'content' => 'Transform your long URL into short one for FREE! Do less get more!'
+])
 ?>
 
 <section class="section--center mdl-grid">
@@ -20,12 +24,6 @@ $this->title = 'Home';
                 'id' => 'form',
                 'action' => ['site/short'],
                 'validateOnType' => true,
-                // Custom Field class for Material Design Lite
-                'fieldClass' => 'app\\components\\ActiveField',
-                'errorCssClass' => 'is-invalid',
-                'attributes' => [
-                    'errorCssClass' => 'mdl-textfield__error',
-                ],
             ]) ?>
 
             <?= $form->field($model, 'long_url')->input('url') ?>

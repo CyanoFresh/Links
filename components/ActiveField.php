@@ -2,6 +2,14 @@
 
 namespace app\components;
 
+/**
+ * Class ActiveField
+ *
+ * Extends vanilla Yii2 ActiveField for supporting MDL library
+ *
+ * @package app\components
+ * @author Alex Solomaha <cyanofresh@gmail.com>
+ */
 class ActiveField extends \yii\widgets\ActiveField
 {
     public $options = ['class' => 'mdl-textfield mdl-js-textfield mdl-textfield--floating-label'];
