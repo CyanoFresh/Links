@@ -38,3 +38,33 @@ $this->title = 'About';
         </div>
     </div>
 </section>
+
+<section class="section--center mdl-grid">
+    <div class="mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--border">
+            <h1 class="mdl-card__title-text">FAQ</h1>
+        </div>
+        <div class="mdl-card__supporting-text">
+            <h5>How many links can be stored on this site?</h5>
+
+            <p>
+                - I used auto-growing algorithm for shortening so it's UNLIMITED!<br>
+                P.S: Of course when database will get very huge size I will take action
+            </p>
+
+            <h5>Why is it free?</h5>
+
+            <p>
+                - It's built on free libraries so if I get it for free I have to take it for free ;)
+            </p>
+
+            <h5>Why there are not any ads?</h5>
+
+            <p>
+                - I have already thought about it. Maybe I will add it in the future but now it's not necessary because
+                I have free droplet on <a href="https://www.digitalocean.com/?refcode=ceacac516a96">Digital Ocean</a>
+                for one year. I will be glad if you register on that site by my link.
+            </p>
+        </div>
+    </div>
+</section>

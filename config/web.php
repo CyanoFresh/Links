@@ -45,9 +45,14 @@ $config = [
                 '' => 'site/index',
                 'short' => 'site/short',
                 'about' => 'site/about',
-                'api' => 'site/api',
+                'faq' => 'site/faq',
                 '<shortCode:.+>' => 'site/go',
             ],
+        ],
+    ],
+    'modules' => [
+        'api' => [
+            'class' => 'app\modules\api\Module',
         ],
     ],
     'params' => $params,

@@ -29,6 +29,9 @@ class SiteController extends Controller
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
+            'page' => [
+                'class' => 'yii\web\ViewAction',
+            ],
         ];
     }
 
@@ -48,6 +51,14 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    /**
+     * Render static About page
+     */
+    public function actionFaq()
+    {
+        return $this->render('faq');
     }
 
     /**

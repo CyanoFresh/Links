@@ -1,11 +1,20 @@
 <?php
 
+/* @var $this \yii\web\View */
+/* @var $content string */
+
 use yii\helpers\Html;
 use app\assets\AppAsset;
 use yii\helpers\Url;
 
-/* @var $this \yii\web\View */
-/* @var $content string */
+$this->registerMetaTag([
+    'name' => 'description',
+    'content' => 'Transform your long URL into short one for FREE! Do less get more!'
+]);
+$this->registerMetaTag([
+    'name' => 'keywords',
+    'content' => 'URL, Shortener, links, short your link, for free'
+]);
 
 AppAsset::register($this);
 ?>
@@ -36,9 +45,8 @@ AppAsset::register($this);
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="<?= Url::to(['site/index']) ?>">Home</a>
+                <a class="mdl-navigation__link" href="<?= Url::home() ?>">Home</a>
                 <a class="mdl-navigation__link" href="<?= Url::to(['site/about']) ?>">About</a>
-                <a class="mdl-navigation__link" href="<?= Url::to(['site/api']) ?>">API</a>
             </nav>
         </div>
     </header>
@@ -47,7 +55,6 @@ AppAsset::register($this);
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="<?= Url::home() ?>">Home</a>
             <a class="mdl-navigation__link" href="<?= Url::to(['site/about']) ?>">About</a>
-            <a class="mdl-navigation__link" href="<?= Url::to(['site/api']) ?>">API</a>
         </nav>
         <span class="mdl-layout-title">Projects</span>
         <nav class="mdl-navigation">

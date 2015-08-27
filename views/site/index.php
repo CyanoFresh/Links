@@ -6,10 +6,6 @@ use app\components\ActiveForm;
 use yii\helpers\Html;
 
 $this->title = 'Home';
-$this->registerMetaTag([
-    'name' => 'description',
-    'content' => 'Transform your long URL into short one for FREE! Do less get more!'
-])
 ?>
 <section class="section--center mdl-grid">
     <div class="card-wide mdl-card mdl-shadow--2dp">
