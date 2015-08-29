@@ -49,6 +49,17 @@ $config = [
                 '<shortCode:.+>' => 'site/go',
             ],
         ],
+        'view' => [
+            'class' => '\rmrevin\yii\minify\View',
+            'enableMinify' => !YII_DEBUG,
+            'web_path' => '@web',
+            'base_path' => '@webroot',
+            'minify_path' => '@webroot/assets',
+            'js_position' => [\yii\web\View::POS_END],
+            'force_charset' => 'UTF-8',
+            'expand_imports' => true,
+            'compress_output' => true,
+        ],
     ],
     'modules' => [
         'api' => [

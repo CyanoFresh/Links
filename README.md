@@ -39,6 +39,14 @@ cd links
 composer install
 ~~~
 
+After it provide these permissions on the files and directories:
+
+~~~
+runtime - 0777
+web/assets - 0777
+yii - 0755
+~~~
+
 Then configure app by editing config files in the `config` directory. See section below \/ \/ \/
 
 CONFIGURATION

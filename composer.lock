@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5a5acb134718e0befedce190a12aa814",
+    "hash": "c79d5c70fc6ea2525bc9470fb4205250",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -100,6 +100,47 @@
                 "jquery",
                 "mask",
                 "plugins"
+            ]
+        },
+        {
+            "name": "bower-asset/material-design-lite",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/google/material-design-lite.git",
+                "reference": "6567dd62c809d8cf9406487ed2799c43b4509876"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/google/material-design-lite/zipball/6567dd62c809d8cf9406487ed2799c43b4509876",
+                "reference": "6567dd62c809d8cf9406487ed2799c43b4509876",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "material.min.css",
+                    "material.min.js"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "./lib/.bower_components",
+                    "test",
+                    "tests"
+                ]
+            },
+            "license": [
+                "Apache-2"
+            ],
+            "description": "Material Design Components in CSS, JS and HTML",
+            "keywords": [
+                "design",
+                "guide",
+                "material",
+                "style",
+                "styleguide"
             ]
         },
         {
@@ -266,6 +307,96 @@
                 "html"
             ],
             "time": "2013-11-30 08:25:19"
+        },
+        {
+            "name": "mrclay/minify",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrclay/minify.git",
+                "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrclay/minify/zipball/3c11ba8232a2155a1a29552aafc528be5fb0a662",
+                "reference": "3c11ba8232a2155a1a29552aafc528be5fb0a662",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.2.1"
+            },
+            "require-dev": {
+                "tubalmartin/cssmin": "~2.4.8"
+            },
+            "suggest": {
+                "tubalmartin/cssmin": "Support minify with CSSMin (YUI PHP port)"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "min/lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Clay",
+                    "email": "steve@mrclay.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
+            "homepage": "http://code.google.com/p/minify/",
+            "time": "2014-10-30 22:58:02"
+        },
+        {
+            "name": "rmrevin/yii2-minify-view",
+            "version": "1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmrevin/yii2-minify-view.git",
+                "reference": "a2bb08ffd500166a62cf034a7a42a347dd45092b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmrevin/yii2-minify-view/zipball/a2bb08ffd500166a62cf034a7a42a347dd45092b",
+                "reference": "a2bb08ffd500166a62cf034a7a42a347dd45092b",
+                "shasum": ""
+            },
+            "require": {
+                "mrclay/minify": "~2.2",
+                "yiisoft/yii2": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "rmrevin\\yii\\minify\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "xgismox@gmail.com",
+                    "homepage": "http://phptime.ru/"
+                }
+            ],
+            "description": "Yii2 View component with minification css & js",
+            "keywords": [
+                "JS",
+                "css",
+                "minify",
+                "view",
+                "yii2"
+            ],
+            "time": "2015-08-20 09:27:04"
         },
         {
             "name": "yiisoft/yii2",
