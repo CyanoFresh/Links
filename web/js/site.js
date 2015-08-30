@@ -18,6 +18,10 @@ $form.on('beforeSubmit', function () {
         .success(function (data) {
             // Save shortened URL to the HTML
             $resultElement.html(data.shortUrl);
+            // Enable G+ button
+            gapi.plusone.render("gplusone", {
+                href: data.shortUrl
+            });
             // Show result card
             $resultSection.removeClass('hidden');
             // Select result

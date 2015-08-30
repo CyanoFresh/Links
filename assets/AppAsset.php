@@ -23,11 +23,11 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
-        'js/material.js',
         'js/bootstrap-modal.js',
         'js/site.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
+        'app\assets\MDLPluginAsset',
     ];
 }

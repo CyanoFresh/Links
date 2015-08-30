@@ -6,6 +6,16 @@ use app\components\ActiveForm;
 use yii\helpers\Html;
 
 $this->title = 'Home';
+
+$this->registerJs("window.___gcfg = {
+    lang: 'en-US',
+    parsetags: 'explicit'
+  };
+(function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();", 3);
 ?>
 <section class="section--center mdl-grid">
     <div class="card-wide mdl-card mdl-shadow--2dp">
@@ -66,7 +76,10 @@ $this->title = 'Home';
                     <h4 class="modal-title" id="myModalLabel">Share shortened link</h4>
                 </div>
                 <div class="modal-body">
-                    <p>To share your shortened URL click on preferable type:</p>
+                    <p>Share your Short URL in the social networks:</p>
+                    <ul class="ul--unstyled">
+                        <li id="gplusone"></li>
+                    </ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-dismiss="modal">Close</button>

@@ -71,7 +71,6 @@ Also check and edit the other files in the `config/` directory to customize your
 TODO
 -------------
 
-* SEO and SNO
 * Bower for Material Design Lite library
 * SN sharing
 * API

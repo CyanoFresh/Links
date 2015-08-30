@@ -179,3 +179,8 @@ textarea#result:focus {
     border: none;
     outline: none;
 }
+
+.ul--unstyled {
+    list-style: none;
+    padding: 0;
+}
