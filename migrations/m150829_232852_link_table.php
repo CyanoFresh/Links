@@ -13,7 +13,7 @@ class m150829_232852_link_table extends Migration
         }
 
         $this->createTable('{{%link}}', [
-            'id' => 'pk',
+            'id' => Schema::TYPE_PK,
             'short_code' => Schema::TYPE_STRING,
             'long_url' => Schema::TYPE_STRING,
         ], $tableOptions);
