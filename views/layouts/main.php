@@ -15,6 +15,26 @@ $this->registerMetaTag([
     'name' => 'keywords',
     'content' => 'URL, Shortener, links, short your link, for free'
 ]);
+$this->registerMetaTag([
+    'name' => 'og:title',
+    'content' => 'Links - Solomaha.me'
+]);
+$this->registerMetaTag([
+    'name' => 'og:description',
+    'content' => 'Transform your long URL into short one for FREE! Do less get more!'
+]);
+$this->registerMetaTag([
+    'name' => 'og:type',
+    'content' => 'website'
+]);
+$this->registerMetaTag([
+    'name' => 'og:url',
+    'content' => Url::home(true),
+]);
+$this->registerMetaTag([
+    'name' => 'og:image',
+    'content' => Url::to('@web/img/icon.png'),
+]);
 
 AppAsset::register($this);
 ?>
