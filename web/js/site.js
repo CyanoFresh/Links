@@ -2,6 +2,19 @@
  * Site.js - Main JS of the site
  * @author Alex Solomaha <cyanofresh@gmail.com>
  */
+window.___gcfg = {
+    lang: 'en-US',
+    parsetags: 'explicit'
+};
+(function () {
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+})();
+
 var $form = $('#form');
 var $formSpinner = $('#loadingSpinner');
 var $resultElement = $('textarea#result');

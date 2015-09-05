@@ -24,7 +24,6 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/bootstrap-modal.js',
-        'js/site.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

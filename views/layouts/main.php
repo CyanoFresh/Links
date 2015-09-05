@@ -9,11 +9,11 @@ use yii\helpers\Url;
 
 $this->registerMetaTag([
     'name' => 'description',
-    'content' => 'Transform your long URL into short one for FREE! Do less get more!'
+    'content' => 'Short your long URL for free. Solomaha.me Projects ©'
 ]);
 $this->registerMetaTag([
     'name' => 'keywords',
-    'content' => 'URL, Shortener, links, short your link, for free'
+    'content' => 'URL, Shortener, links, short your link, for free, Solomaha.me, Solomaha Projects'
 ]);
 $this->registerMetaTag([
     'name' => 'og:title',
@@ -21,7 +21,7 @@ $this->registerMetaTag([
 ]);
 $this->registerMetaTag([
     'name' => 'og:description',
-    'content' => 'Transform your long URL into short one for FREE! Do less get more!'
+    'content' => 'Short your long URL for free. Solomaha.me Projects ©'
 ]);
 $this->registerMetaTag([
     'name' => 'og:type',
