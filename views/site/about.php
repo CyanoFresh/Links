@@ -18,6 +18,8 @@ $this->title = 'About';
                     href="http://getmdl.io">Material Design Lite</a> in front-end. All used libraries in my project are
                 opensource with free license. You can find its sources on its sites.</p>
 
+            <p>Will be nice if you share this service for others in social networks. Thanks!</p>
+
             <p>Also you can find sources of this project on <a href="https://github.com/CyanoFresh/Links">Github</a>.
                 Feel free to contribute and fix my mistakes (I think here is a lot :D). I'll be glade to have
                 support</p>
@@ -31,9 +33,6 @@ $this->title = 'About';
             </a>
             <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="http://projects.solomaha.me">
                 All my projects
-            </a>
-            <a class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                Share
             </a>
         </div>
     </div>

@@ -51,36 +51,9 @@ $this->registerJsFile('@web/js/site.js', [
             </form>
         </div>
         <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" id="copyButton">
+            <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" id="copyButton">
                 Copy
-            </a>
-            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" id="shareButton">
-                Share
             </a>
         </div>
     </div>
 </section>
-
-<?php $this->beginBlock('modals'); ?>
-
-    <!-- Share Modal -->
-    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Share shortened link</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Share your Short URL in the social networks:</p>
-                    <ul class="ul--unstyled">
-                        <li id="gplusone"></li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<?php $this->endBlock(); ?>
